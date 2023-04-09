@@ -2,34 +2,77 @@ body {
     font-family: Arial;
 }
 
-.servicesDivMain>a {
+.servicesDiv{
+    margin-top: 25px; 
+    padding: 25px; 
+    text-shadow: 0px 0px 1px; 
+    display: flex; 
+    justify-content: center;
+}
+
+.servicesDiv>a {
     border: 2px solid;
     margin: 5px;
     text-align: center;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    font-size: 18px;
 }
 
-a:link {
+.navBar:link {
     color: black;
     background-color: none;
     text-decoration: none;
 }
 
-a:visited {
+.navBar:visited {
     color: black;
     background-color: none;
     text-decoration: none;
 }
 
-a:hover {
+.navBar:hover {
     color: black;
     background-color: none;
     text-decoration: none;
     box-shadow: 0px 0px 10px black;
 }
 
-a:active {
+.navBar:active {
     color: black;
     background-color: none;
     text-decoration: none;
-    box-shadow: none;
+    box-shadow: 0px 0px 10px black;
+    font-size: 20px;
+}
+
+.servicesA:link {
+    color: black;
+    background-color: none;
+    text-decoration: none;
+}
+
+.servicesA:visited {
+    color: black;
+    background-color: none;
+    text-decoration: none;
+}
+
+.servicesA:hover {
+    color: black;
+    background-color: none;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px black;
+}
+
+.servicesA:active {
+    color: black;
+    background-color: none;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px black;
+    font-size: 20px;
 }
