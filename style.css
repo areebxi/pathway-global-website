@@ -1,78 +1,213 @@
 body {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DFE3F1;
+    margin: 0px;
 }
 
-.servicesDiv{
-    margin-top: 25px; 
-    padding: 25px; 
-    text-shadow: 0px 0px 1px; 
+
+
+/* Nav Bar ↓ */
+header {
     display: flex; 
-    justify-content: center;
+    justify-content: space-between; 
+    background-color: #202A6B; 
+    color: black; 
+    border-bottom: 5px solid black; 
+    box-shadow: 0px 0px 10px;
+    box-shadow: inset 0px 0px 10px;
 }
 
-.servicesDiv>a {
-    border: 2px solid;
-    margin: 5px;
+#homeLogoDiv {
+    margin-left: 10px;
+}
+
+#homeLogoDiv>a>img {
+    margin-top: 4px;
+    width: 75px; 
+    height: 75px; 
+    padding: 5px; 
+    border-radius: 50px; 
+    box-shadow: 0px 0px 15px black; 
+    background-color: white;
+}
+
+#ContactAboutDiv {
+    margin-right: 10px; 
+    margin-top: auto; 
+    margin-bottom: auto;
+}
+
+#ContactAboutDiv>a {
+    color: #202A6B; 
+    font-weight: 600; 
+    padding: 5px 10px; 
+    font-size: 20px; 
+    border: 2px solid black; 
+    background-color: #DFE3F1; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+/* Nav Bar ↑ */
+
+
+
+.headingsDiv {
+    font-weight: 800; 
+    font-size: 25px;
+    margin: 50px 10px; 
+    border: 2px solid black; 
     text-align: center;
-    width: 250px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 15px;
+    text-shadow: 0px 0px 125px black;
+    box-shadow: inset 0px 0px 25px;
+}
+
+.paragraphsDiv {
+    margin: 50px 45px; 
+    text-align: justify; 
+    font-size: 20px; 
+    font-weight: 600;
+}
+
+/* Buller Point ↓ */
+ul {
+    list-style: none;
+}
+ul li::before {
+    content: "\2022";
+    color: #202A6B;
+    font-weight: bolder;
+    display: inline-block;
+    width: 1em;
+    margin-left: -2em;
+}
+/* Buller Point ↑ */
+
+
+/* Services Section ↓ */
+.servicesDiv {
+    margin: 50px 50px;
+}
+
+.servicesA {
+    margin: 25px 0px;
+    border: 2px solid black;
+    text-align: center;
+    width: 100%;
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5px;
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: 800;
+    box-shadow: inset 0px 0px 15px black;
 }
 
-.navBar:link {
+.servicesA>span {
+    padding: 0px 10px;
     color: black;
+    text-shadow: 0px 2px 75px black;
+}
+/* Services Section ↑ */
+
+
+/* ContactAboutDiv ↓*/
+#ContactAboutDiv>a:link {
+    color: none;
     background-color: none;
     text-decoration: none;
 }
 
-.navBar:visited {
-    color: black;
+#ContactAboutDiv>a:visited {
+    color: none;
     background-color: none;
     text-decoration: none;
 }
 
-.navBar:hover {
-    color: black;
+#ContactAboutDiv>a:hover {
+    color: none;
     background-color: none;
     text-decoration: none;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 15px black;
 }
 
-.navBar:active {
-    color: black;
+#ContactAboutDiv>a:active {
+    color: none;
     background-color: none;
     text-decoration: none;
-    box-shadow: 0px 0px 10px black;
-    font-size: 20px;
+    box-shadow: inset 0px 0px 5px black;
 }
+/* ContactAboutDiv ↑*/
 
+/* servicesA ↓ */
 .servicesA:link {
-    color: black;
+    color: none;
     background-color: none;
     text-decoration: none;
 }
 
 .servicesA:visited {
-    color: black;
+    color: none;
     background-color: none;
     text-decoration: none;
 }
 
 .servicesA:hover {
-    color: black;
+    color: none;
     background-color: none;
     text-decoration: none;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: inset 0px 0px 20px black;
 }
 
 .servicesA:active {
-    color: black;
+    color: none;
     background-color: none;
     text-decoration: none;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: inset 0px 0px 35px black;
+}
+/* servicesA ↑ */
+
+
+#homeLogoDiv>a>img:hover {
+    box-shadow: 0px 0px 25px black; 
+}
+
+#homeLogoDiv>a>img:active {
+    box-shadow: inset 0px 0px 5px black; 
+}
+
+
+footer {
+    margin-top: 10%;
+    background-color: #202A6B; 
+    color: white; 
+    border-top: 5px solid black; 
+    box-shadow: 0px 0px 10px;
+    box-shadow: inset 0px 0px 10px black;
+}
+
+.footerDiv {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+}
+
+footer>div>span {
     font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    align-self: center;
+    text-shadow: 0px 0px 20px black;
+}
+footer>div>img {
+    width: 65px; 
+    height: 65px; 
+    padding: 5px; 
+    border-radius: 50px; 
+    box-shadow: 0px 0px 15px black; 
+    background-color: white;
+    margin-right: 10px;
 }
