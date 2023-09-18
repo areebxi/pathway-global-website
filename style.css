@@ -5,7 +5,6 @@ body {
 }
 
 
-
 /* Nav Bar ↓ */
 header {
     display: flex;
@@ -127,6 +126,7 @@ header {
     font-weight: 700;
 }
 
+
 /* Buller Point ↓ */
 ul {
     list-style: none;
@@ -238,6 +238,7 @@ ul li::before {
 }
 
 
+/* Footer ↓ */
 footer {
     margin-top: 20%;
     background-color: #202A6B; 
@@ -270,10 +271,13 @@ footer>div>img {
     margin-right: 10px;
 }
 
+/* Footer ↑ */
+
 .fontBlue{
     color: #202A6B;
 }
 
+/* Media queries ↓ */
 
 @media (max-width: 1025px) {
     #homeLogoDiv>span {
@@ -368,3 +372,5 @@ footer>div>img {
         font-size: 10px;
     }
 }
+
+/* Media queries ↑ */
